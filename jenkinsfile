@@ -1,4 +1,4 @@
-node('ubuntu'){
+node('UBUNTU'){
     stage('cvs'){
         git  'https://github.com/srinivaspm/test_gameoflife.git'
 
