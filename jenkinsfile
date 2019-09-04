@@ -1,0 +1,9 @@
+node('ubuntu'){
+    stage('cvs'){
+        git  'https://github.com/srinivaspm/test_gameoflife.git'
+
+    }
+    stage('package'){
+        sh 'mvn package'
+    }
+}
